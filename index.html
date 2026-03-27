@@ -22,14 +22,19 @@
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--mono);
-      font-size: 13px;
-      font-weight: 300;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--mono);
+
+  font-size: 16px;           /* was 13px */
+  font-weight: 400;          /* was 300 */
+  line-height: 1.8;          /* slightly more breathing space */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+}
 
     body::before {
       content: '';
