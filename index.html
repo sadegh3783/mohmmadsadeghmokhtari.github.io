@@ -1037,34 +1037,30 @@
             </div>
           </div>
 
-          <form class="contact-form reveal">
-            <div class="form-row">
-              <div class="field">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your name">
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="your@email.com">
-              </div>
-            </div>
+          <form class="contact-form reveal" action="https://formspree.io/f/xojpjqba" method="POST">
+  <div class="form-row">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="your@email.com" required>
+    </div>
+  </div>
 
-            <div class="field">
-              <label for="subject">Subject</label>
-              <input id="subject" type="text" placeholder="Research collaboration, consulting, speaking...">
-            </div>
+  <div class="field">
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject" type="text" placeholder="Research collaboration, consulting, speaking..." required>
+  </div>
 
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" rows="6" placeholder="Tell me about your project, research, or idea..."></textarea>
-            </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, research, or idea..." required></textarea>
+  </div>
 
-            <button type="submit" class="btn-send">Message</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
+  <button type="submit" class="btn-send">Message</button>
+</form>
 
   <footer>
     <div class="footer-inner">
